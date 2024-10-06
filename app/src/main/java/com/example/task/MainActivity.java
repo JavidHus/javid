@@ -1,6 +1,5 @@
 package com.example.task;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,21 +29,12 @@ public class MainActivity extends AppCompatActivity {
         // Initialize UI elements
         TextView myTextView = findViewById(R.id.myTextView);
         Button myButton = findViewById(R.id.myButton);
-        Button changeColorButton = findViewById(R.id.changeColorButton);
 
         // Button to change the text
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 myTextView.setText("Button clicked!");
-            }
-        });
-
-        // Button to change the text color
-        changeColorButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myTextView.setTextColor(Color.RED); // Change text color to red
             }
         });
     }
